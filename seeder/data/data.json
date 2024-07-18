@@ -1,0 +1,130 @@
+{
+  "admin": {
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "mobile": "9876543210",
+    "role": "",
+    "type": "admin",
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  "role": [{ "name": "admin" }, { "name": "vendor" }, { "name": "assistant" }, { "name": "customer" }],
+  "segment": [
+    { "name": "garden galleria","slug":"garden_galleria" },
+    { "name": "event galleria" ,"slug":"event_galleria"},
+    { "name": "pooja galleria" ,"slug":"pooja_galleria"},
+    { "name": "cakes","slug":"cakes" },
+    { "name": "flowers","slug":"flowers" }
+  ],
+  "category": [
+    {
+      "segment": "garden galleria",
+      "data": [
+        { "name": "gamle" },
+        { "name": "plants" },
+        { "name": "compost" },
+        { "name": "seeds & medicine" },
+        { "name": "gamla stand & other" },
+        { "name": "garden support" }
+      ]
+    },
+    {
+      "segment": "event galleria",
+      "data": [{ "name": "car decoration" }, { "name": "party decoration" }]
+    },
+    {
+      "segment": "pooja galleria",
+      "data": [{ "name": "devotional package" }, { "name": "devotional items" }]
+    },
+    {
+      "segment": "cakes",
+      "data": [
+        { "name": "cakes" }
+      ]
+    },
+    {
+      "segment": "flowers",
+      "data": [
+        { "name": "flowers hamper" },
+        { "name": "flowers by color" },
+        { "name": "flowers type" }
+      ]
+    }
+  ],
+  "filterCategory": [
+    { "name": "Price", "field": "price", "type": "range", "multiSelect": false },
+    { "name": "Rating", "field": "rating", "type": "range", "multiSelect": false },
+    { "name": "Segment", "field": "segment", "type": "match", "multiSelect": false },
+    { "name": "Category", "field": "category", "type": "match", "multiSelect": false }
+  ],
+  "filterValue": [
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Price",
+      "title": "0 - 100",
+      "min": 0,
+      "max": 100,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Price",
+      "title": "101 - 500",
+      "min": 101,
+      "max": 500,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Price",
+      "title": "501 - 1000",
+      "min": 501,
+      "max": 1000,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Price",
+      "title": "1001 - 10000",
+      "min": 1001,
+      "max": 10000,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Price",
+      "title": "10000 -",
+      "min": 1001,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Rating",
+      "title": "0",
+      "min": 0,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Rating",
+      "title": "From 1 to 3",
+      "min": 1,
+      "max": 3,
+      "match": null
+    },
+    {
+      "filterCategoryId": null,
+      "filterCategory": "Rating",
+      "title": "From 3 to 5",
+      "min": 3,
+      "max": 5,
+      "match": null
+    }
+  ],
+  "filterSorting": [
+    { "name": "Low to High price", "field": "price", "type": "ascending" },
+    { "name": "High to Low price", "field": "price", "type": "descending" },
+    { "name": "Low to High rating", "field": "rating", "type": "ascending" },
+    { "name": "High to Low rating", "field": "rating", "type": "descending" }
+  ]
+}
